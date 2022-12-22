@@ -1,0 +1,33 @@
+    .icon__img {
+    padding:15px;
+    background: #171f38;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .icon__img img {
+    width: 100% !important;
+    border-radius: 20px;
+  }
+  
+  .icon__img__box {
+    width: 200px !important;
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .icon__img__gallery {
+      justify-content: center !important;
+      margin-top: 50px;
+    }
+  
+    .icon__content h3 {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .icon__img__box {
+      width: 150px !important;
+    }
+  }
+  
