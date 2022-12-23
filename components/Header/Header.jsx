@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from "react";
-
 import { Container } from "reactstrap";
 import classes from "./header.module.css";
 import Link from "next/link";
@@ -32,14 +31,15 @@ const NAV__LINK = [
 ];
 
 const Header = () => {
-  const headerRef = useRef(null);
 
+  const headerRef = useRef(null);
+  
   const menuRef = useRef(null);
 
   const headerFunc = () => {
     if (
-      document.body.scrollTop > 80 ||
-      document.documentElement.scrollTop > 80
+      document.body.scrollTop > 0 ||
+      document.documentElement.scrollTop > 0
     ) {
       headerRef.current.classList.add(`${classes.header__shrink}`);
     } else {
@@ -47,14 +47,15 @@ const Header = () => {
     }
   };
 
+// neden add ve remove kullanıyoruz?
   useEffect(() => {
     window.addEventListener("scroll", headerFunc);
-
     return () => window.removeEventListener("scroll", headerFunc);
   }, []);
-
+// ne işe yarıyor?
   const toggleMenu = () =>
     menuRef.current.classList.toggle(`${classes.menu__active}`);
+    console.log(menuRef);
 
   return (
     <header className={`${classes.header}`} ref={headerRef}>
@@ -76,7 +77,8 @@ const Header = () => {
             <div className={`${classes.nav__menu}`}>
               {NAV__LINK.map((item, index) => (
                 <Link href={item.path} key={index}>
-                  {item.display}
+                 <a className={`${headerRef.current === NAV__LINK.path ? classes.active : ""}`}> {item.display}</a>
+               
                 </Link>
               ))}
 
@@ -95,6 +97,7 @@ const Header = () => {
       </Container>
     </header>
   );
+  
 };
 
 export default Header;
