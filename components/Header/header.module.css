@@ -37,11 +37,11 @@
 }
 
 .nav__menu a:hover{
-  color: #c70ac0;
+  color: #f99820
 }
 
-.nav__menu .active{
-  color: #c70ac0;
+.nav__menu a.active{
+  color: #f99820
 }
 /* .nav__menu a:first-child {
   color: #01d293;

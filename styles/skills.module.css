@@ -3,6 +3,7 @@
     background: #171f38;
     margin-bottom: 20px;
     border-radius: 5px;
+    /* filter: grayscale(100%); */
   }
   
   .icon__img img {

@@ -31,32 +31,30 @@ const NAV__LINK = [
 ];
 
 const Header = () => {
-
   const headerRef = useRef(null);
-  
+
   const menuRef = useRef(null);
 
   const headerFunc = () => {
-    if (
-      document.body.scrollTop > 0 ||
-      document.documentElement.scrollTop > 0
-    ) {
+
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
       headerRef.current.classList.add(`${classes.header__shrink}`);
-    } else {
+      menuRef.current.firstChild.firstChild.classList.remove(`${classes.active}`);
+
+    } else  {
       headerRef.current.classList.remove(`${classes.header__shrink}`);
+      menuRef.current.firstChild.firstChild.classList.add(`${classes.active}`);
     }
   };
 
-// neden add ve remove kullanıyoruz?
+  // neden add ve remove kullanıyoruz?
   useEffect(() => {
     window.addEventListener("scroll", headerFunc);
     return () => window.removeEventListener("scroll", headerFunc);
   }, []);
-// ne işe yarıyor?
+  // ne işe yarıyor?
   const toggleMenu = () =>
     menuRef.current.classList.toggle(`${classes.menu__active}`);
-    console.log(menuRef);
-
   return (
     <header className={`${classes.header}`} ref={headerRef}>
       <Container>
@@ -77,8 +75,7 @@ const Header = () => {
             <div className={`${classes.nav__menu}`}>
               {NAV__LINK.map((item, index) => (
                 <Link href={item.path} key={index}>
-                 <a className={`${headerRef.current === NAV__LINK.path ? classes.active : ""}`}> {item.display}</a>
-               
+                  {item.display}
                 </Link>
               ))}
 
@@ -97,7 +94,6 @@ const Header = () => {
       </Container>
     </header>
   );
-  
 };
 
 export default Header;

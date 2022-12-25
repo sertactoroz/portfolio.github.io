@@ -1,7 +1,7 @@
 const portfolio = [
   {
     id: "01",
-    title: "Transportation Mobile App",
+    title: "Todo App",
     img: "/images/portfolio-01.jpg",
     category: "Mobile App",
     keyword: ["Mobile", "App", "UI-UX"],
