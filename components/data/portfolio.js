@@ -3,29 +3,26 @@ const portfolio = [
     id: "01",
     title: "Todo App",
     img: "/images/portfolio-01.jpg",
-    category: "Mobile App",
-    keyword: ["Mobile", "App", "UI-UX"],
+    category: "Web Design",
+    keyword: ["Web", "App", "UI-UX"],
     liveUrl: "#",
   },
 
   {
     id: "02",
-    title: "Workout Tracker App",
+    title: "Tetris",
     img: "/images/portfolio-02.jpg",
-    category: "Mobile App",
-    keyword: ["Mobile", "App", "UI-UX"],
+    category: "Web Design",
+    keyword: ["Web", "App", "UI-UX"],
     liveUrl: "#",
   },
 
-
-
-
   {
-    id: "06",
-    title: "Travel  App",
-    img: "/images/portfolio-06.jpg",
-    category: "Mobile App",
-    keyword: ["Mobile", "App", "UI-UX"],
+    id: "03",
+    title: "Expense Tracker App",
+    img: "/images/portfolio-03.jpg",
+    category: "Web Design",
+    keyword: ["Web", "App", "UI-UX"],
     liveUrl: "#",
   },
 
@@ -33,8 +30,8 @@ const portfolio = [
     id: "07",
     title: "Portfolio Website",
     img: "/images/portfolio-07.png",
-    category: "Web Design",
-    keyword: ["Web", "Web design", "UI-UX"],
+    category: "Mobile App",
+    keyword: ["Mobile", "Web design", "UI-UX"],
     liveUrl: "#",
   },
 
@@ -42,7 +39,7 @@ const portfolio = [
     id: "08",
     title: "Restaurant Website",
     img: "/images/portfolio-08.png",
-    category: "Web Design",
+    category: "Mobile App",
     keyword: ["Web", "Web design", "UI-UX"],
     liveUrl: "#",
   },
@@ -51,8 +48,8 @@ const portfolio = [
     id: "09",
     title: "Agency Website",
     img: "/images/portfolio-09.png",
-    category: "Web Design",
-    keyword: ["Web", "Web design", "UI-UX"],
+    category: "Mobile",
+    keyword: ["Mobile App", "Web design", "UI-UX"],
     liveUrl: "#",
   },
 ];
