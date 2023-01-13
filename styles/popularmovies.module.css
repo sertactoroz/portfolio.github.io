@@ -1,0 +1,43 @@
+.popular {
+    width: full; 
+    margin: 0 auto;
+    padding: 30px 30px;
+
+
+}
+.img {
+  display: flex;
+  padding: 10px 10px;
+  border-radius: 40px;
+}
+
+
+.popular-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.popular-inner a {
+  width: calc(25% - 10px);
+  position: relative; 
+}
+
+.popular-inner h3 {
+  display: flex;
+  text-align: center;
+  font-size: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  background: linear-gradient(to top, #000, transparent);
+  padding: 50px 20px 20px 20px;
+}
+
+.popular h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}

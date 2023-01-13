@@ -7,7 +7,7 @@ import PortfolioItem from "./PortfolioItem";
 import portfolioData from "../data/portfolio";
 
 const Portfolio = () => {
-  const [filter, setFilter] = useState("Mobile App");
+  const [filter, setFilter] = useState("Web Design");
   const [data, setData] = useState();
 
   useEffect(() => {
